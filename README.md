@@ -166,9 +166,17 @@ sentinel-vru/
 │       ├── 2d_training_and_perception/     # YOLO11m PR curves, loss curves, confusion matrices
 │       ├── 2d_calibration_and_risk/        # Isotonic reliability diagrams, lead time distributions
 │       └── 2d_architecture_and_pipeline/   # System architecture and SGAS flowcharts
+├── main.py                                 # Core production FastAPI + WebSocket edge inference server
+├── notebooks/                               # End-to-end model training, tracking, and evaluation pipelines
+│   ├── 03_yolo11m_training.ipynb           # YOLO11m fine-tuning on harmonized VisDrone2019-DET
+│   ├── 05_safety_guided_perception.ipynb   # Safety-Guided Adaptive Slicing (SGAS) implementation
+│   ├── 06_bytetrack_tracking.ipynb         # ByteTrack MOT + Kalman ground projection
+│   ├── 07_camera_calibration_ipm.ipynb     # Planar Inverse Perspective Mapping (IPM) & homography
+│   ├── 08_interaction_graph.ipynb          # Spatiotemporal interaction graph construction & pruning
+│   ├── 10_cagt_risk_training.ipynb         # Collision-Aware Graph Transformer (CAGT-Risk) training
+│   ├── 11_uncertainty_calibration.ipynb    # Isotonic probability calibration & ECE reduction
+│   └── 15_full_sentinel_evaluation.ipynb   # Complete 8-stage pipeline evaluation benchmark
 ├── custom_bytetrack.yaml                   # ByteTrack tracking hyperparameter configuration
-├── final_results.md                        # Complete numerical results and ablation studies
-├── main.py                                 # Single-file production FastAPI backend server
 └── requirements.txt                        # Python dependencies
 ```
 
