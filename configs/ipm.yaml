@@ -1,0 +1,11 @@
+# Sentinel: Camera Calibration & Inverse Perspective Mapping (IPM) Configuration
+status: "IMAGE-SPACE ONLY"
+dataset_target: "AI City 2021 Track 4"
+has_calibration_matrix: false
+enforce_metric_coordinates: false
+velocity_unit: "px/s"
+distance_unit: "px"
+coordinate_mapping:
+  threejs_x: "pixel_center_x"
+  threejs_y: 10.0 # Height elevation above ground
+  threejs_z: "pixel_bottom_y" # Depth proxy

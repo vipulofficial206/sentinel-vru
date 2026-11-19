@@ -1,0 +1,33 @@
+# Sentinel: Safety-Guided Adaptive Slicing (SGAS) & SAHI Configuration
+
+# Standard SAHI Tiling Parameters (Mode B Baseline)
+slice_height: 512
+slice_width: 512
+overlap_height_ratio: 0.20
+overlap_width_ratio: 0.20
+confidence_threshold: 0.30
+postprocess_type: "NMS"
+postprocess_match_metric: "IOU"
+postprocess_match_threshold: 0.50
+
+# SGAS Adaptive Policy & Budget Controls (Mode C Proposed)
+adaptive_mode: "sgas" # Options: "full_frame", "standard_sahi", "sgas"
+max_extra_tiles_per_frame: 3
+max_image_area_ratio: 0.50
+min_region_priority_score: 0.35
+tile_redundancy_iou_thresh: 0.30
+
+# Signal Weights for Region Prioritization (Sum = 1.0)
+weight_small_object: 0.35
+weight_uncertainty: 0.25
+weight_crowding: 0.20
+weight_safety_relevance: 0.20
+
+# Signal Thresholds
+small_object_max_area_ratio: 0.005 # Normalized area w*h / (W*H)
+uncertainty_conf_min: 0.25
+uncertainty_conf_max: 0.55
+crowding_iou_threshold: 0.15
+crowding_min_cluster_size: 2
+safety_risk_threshold: 0.40
+safety_closing_speed_threshold: 15.0 # px/s

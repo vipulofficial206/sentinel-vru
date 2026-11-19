@@ -1,0 +1,11 @@
+# Sentinel: ByteTrack Tracking Configuration
+tracker_type: "bytetrack"
+track_high_thresh: 0.50
+track_low_thresh: 0.10
+new_track_thresh: 0.60
+track_buffer: 30       # Keep lost tracks for 30 frames (1.0 s)
+match_thresh: 0.80
+fuse_score: True
+frame_rate: 30
+uncertainty_proxy: "confidence_rolling_std"
+uncertainty_window: 15

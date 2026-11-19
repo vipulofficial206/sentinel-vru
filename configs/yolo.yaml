@@ -1,0 +1,19 @@
+# Sentinel: YOLO11m Detection Configuration
+model_name: "YOLO11m"
+weights_path: "models/yolo/yolo11m_best.pt"
+input_resolution: [640, 640]
+confidence_threshold: 0.30
+iou_threshold: 0.50
+max_detections: 300
+device: "cuda:0"  # Falls back to cpu if cuda unavailable
+classes:
+  0: "pedestrian"
+  1: "people"
+  2: "bicycle"
+  3: "car"
+  4: "van"
+  5: "truck"
+  6: "tricycle"
+  7: "awning-tricycle"
+  8: "bus"
+  9: "motor"

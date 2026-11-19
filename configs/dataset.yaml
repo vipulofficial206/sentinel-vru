@@ -1,0 +1,26 @@
+# Sentinel: Dataset Specifications & Ontology Mapping
+primary_datasets:
+  visdrone_2019:
+    purpose: "Base object detection training (YOLO11m)"
+    official_source: "AISKYEYE VisDrone Team / ICCV 2019"
+    annotation_type: "Bounding box (10 classes)"
+    split: "train / val / test"
+  ai_city_2021_track4:
+    purpose: "Traffic Anomaly Detection & Early Warning Evaluation"
+    official_source: "NVIDIA AI City Challenge 2021"
+    annotation_type: "Temporal video-level intervals (start/end timestamp)"
+    supervision_limitation: "Provides traffic anomaly intervals (crashes/stalls), NOT dedicated VRU-conflict labels"
+    split: "150 train videos (Subset A: train, Subset B: val, Subset C: test)"
+  cross_domain_datasets:
+    uvh_26:
+      domain: "Indian CCTV street traffic"
+      evaluation: "Zero-shot spatial detection"
+    mot17:
+      domain: "Ground-level pedestrian tracking"
+      evaluation: "Zero-shot spatial detection"
+
+sentinel_taxonomy_mapping:
+  pedestrian: [0, 1]
+  bicycle: [2]
+  motorcycle: [6, 7, 9]
+  vehicle: [3, 4, 5, 8]

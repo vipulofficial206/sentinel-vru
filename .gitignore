@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Archives and Weights
+*.zip
+*.tar.gz
+*.pt
+*.pth
+*.onnx
+*.bin
+models/
+runs/
+
+# Datasets and Large Media Files
+data/
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.h264
+docx_extracted_images/
+
+# Results - keep only curated figures
+results/*
+!results/report_and_presentation_figures/
+!results/report_and_presentation_figures/**
+
+# Exclude Research, Theses, Presentations, Defense Guides and Notebooks
+pres/
+notebooks/
+*.docx
+*.pptx
+*.pdf
+*.tex
+
+# Temporary and Scratch Directories
+scratch/
+logs/
+*.log
+Thumbs.db
+.DS_Store
+~$*
+
+# Node / Frontend Build Outputs & Dependencies
+node_modules/
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Local Secrets
+.env
+.env.local

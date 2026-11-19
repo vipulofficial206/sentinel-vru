@@ -1,0 +1,26 @@
+{
+  "status": "CALIBRATED \u2014 METRIC",
+  "camera_id": "AICITY_TRACK4",
+  "units": "meters",
+  "homography": [
+    [
+      -0.023999999999999976,
+      -0.01623529411764706,
+      20.216470588235286
+    ],
+    [
+      -2.5837917664003643e-17,
+      -0.18117647058823513,
+      105.0823529411764
+    ],
+    [
+      -5.6843418860808e-19,
+      -0.002999999999999998,
+      1.0
+    ]
+  ],
+  "mean_reprojection_error": 0.0,
+  "validation_error": null,
+  "calibration_timestamp": 1791822908.1701238,
+  "calibration_method": "Four-Point Planar Correspondence with Reprojection Error Validation"
+}

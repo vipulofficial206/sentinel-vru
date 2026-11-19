@@ -1,0 +1,17 @@
+# Sentinel: CAGT-Risk Architecture & Decision Configuration
+model_architecture: "Camera-Aware Graph-Temporal Risk Network (CAGT-Risk)"
+weights_path: "models/cagt/cagt_risk_best.pth"
+calibrator_path: "results/uncertainty_calibration/isotonic_calibrator.pkl"
+
+node_feature_dim: 8
+edge_feature_dim: 4
+hidden_dim: 128
+num_attention_heads: 4
+
+evaluation_horizons_s: [0.5, 1.0, 1.5, 2.0, 3.0]
+primary_horizon_s: 1.5
+
+decision_rule:
+  calibrated_risk_threshold: 0.65
+  pre_event_state: "PRE-EVENT WARNING"
+  nominal_state: "NORMAL"
