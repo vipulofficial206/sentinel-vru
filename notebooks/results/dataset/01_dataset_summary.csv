@@ -1,0 +1,5 @@
+Dataset,Purpose,Annotation Type,Object Labels,Temporal Labels,Tracking Labels,Calibration,Train Split,Validation Split,Test Split,Known Limitations
+AI City Challenge 2021 Track 4,Traffic Anomaly Detection,Temporal anomaly/event annotations,None,Yes (start/end seconds),None,None,100 videos,None,150 videos,"No object bounding boxes, single anomaly class"
+VisDrone,Object Detection / VRU,Bounding Boxes,"10 classes (pedestrian, car, etc.)",None,None,None,Available,Available,Available,"Aerial viewpoint, small objects"
+UVH-26,Object Detection / Tracking,"Bounding Boxes, Tracking",VRU / Vehicles,None,Yes,None,Available,Available,Available,"Heavy dataset, partial subsets used"
+MOT17,Tracking,"Bounding Boxes, Tracking",Pedestrians,None,Yes,Available,Available,None,Available,"Pedestrian only, older benchmark"

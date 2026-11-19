@@ -12,6 +12,7 @@ __pycache__/
 *.bin
 models/
 runs/
+notebooks/runs/
 
 # Datasets and Large Media Files
 data/
@@ -27,9 +28,8 @@ results/*
 !results/report_and_presentation_figures/
 !results/report_and_presentation_figures/**
 
-# Exclude Research, Theses, Presentations, Defense Guides and Notebooks
+# Exclude Research Thesis, Paper Drafts, and Presentations
 pres/
-notebooks/
 *.docx
 *.pptx
 *.pdf
